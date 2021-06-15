@@ -230,6 +230,10 @@ body {
     color: #fff;
   }
 
+  .social__icon {
+    font-size: 22px;
+  }
+
 .welcome {
     background-color: #f8f9fd;
     transform: translateY(-20px);
