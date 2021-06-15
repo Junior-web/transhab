@@ -1,0 +1,102 @@
+@font-face {
+  font-family: "Futurica";
+  src: url(../libs/fonts/6872.ttf);
+  font-display: swap;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font: normal 14px "Futurica", sans-serif;
+  color: #282828;
+}
+
+.header__top {
+  padding: 25px 0;
+}
+
+.logo__img {
+  max-height: 50px;
+}
+
+.phone__link, .phone__link:visited, .phone__link:hover, .phone__link:active, .phone__link:link {
+  color: #282828;
+  text-decoration: none;
+  line-height: 1.5;
+  font-size: 16px;
+}
+.phone__link_light, .phone__link_light:visited, .phone__link_light:hover, .phone__link_light:active, .phone__link_light:link {
+  color: #d6d7d8;
+}
+
+.icon-accent {
+  color: #109647;
+  margin-right: 8px;
+  font-size: 16px;
+  padding-top: 5px;
+}
+
+.communicate__link:not(:last-of-type) {
+  margin-right: 8px;
+}
+.communicate__icon {
+  height: 18px;
+  max-height: 18px;
+}
+
+.social__link, .social__link:link, .social__link:active, .social__link:visited {
+  color: #282828;
+}
+
+.nav__container {
+  background-color: #fff221;
+  border-radius: 2px;
+  box-shadow: 0px 2px 8px rgba(204, 204, 204, 0.5);
+  position: relative;
+  z-index: 1;
+}
+
+.top-nav {
+  list-style-type: none;
+  height: 100%;
+  margin: 0;
+}
+.top-nav__link, .top-nav__link:link, .top-nav__link:active, .top-nav__link:visited {
+  text-decoration: none;
+  color: #282828;
+  font-size: 12px;
+}
+.top-nav__elem {
+  padding: 20px 32px;
+  transition: 0.3s;
+  text-transform: uppercase;
+  position: relative;
+}
+.top-nav__elem::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #109647;
+  transform: scaleX(0);
+  transition: all 0.2s ease-in-out;
+}
+.top-nav__elem:hover::before {
+  transform: scaleX(1);
+}
+.top-nav__elem:hover .top-nav__link {
+  color: #fff;
+  z-index: 2;
+  position: relative;
+}
+.top-nav__elem_active {
+  background-color: #109647;
+}
+.top-nav__elem_active .top-nav__link {
+  color: #fff;
+}
