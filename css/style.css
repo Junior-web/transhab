@@ -1,0 +1,566 @@
+@font-face {
+    font-family: "Futurica";
+    src: url(../libs/fonts/6872.ttf);
+    font-display: swap;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font: normal 14px "Futurica", sans-serif;
+    color: #282828;
+}
+
+.header__top {
+    padding: 25px 0;
+}
+
+.header__logo img {
+    max-height: 50px;
+}
+
+.phone__link,
+.phone__link:visited,
+.phone__link:hover,
+.phone__link:active,
+.phone__link:link {
+    color: #282828;
+    text-decoration: none;
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+.phone__link_light,
+.phone__link_light:visited,
+.phone__link_light:hover,
+.phone__link_light:active,
+.phone__link_light:link {
+    color: #d6d7d8;
+}
+
+.header__address i,
+.header__phone i {
+    color: #109647;
+    margin-right: 8px;
+    font-size: 16px;
+    padding-top: 5px;
+}
+
+.communicate a img {
+    height: 18px;
+    max-height: 18px;
+}
+
+.communicate a:not(:last-child) {
+    margin-right: 8px;
+}
+
+.social__link,
+.social__link:link,
+.social__link:active,
+.social__link:visited {
+    color: #282828;
+}
+
+.nav__container {
+    background-color: #fff221;
+    border-radius: 2px;
+    box-shadow: 0px 2px 8px rgba(204, 204, 204, 0.5);
+    position: relative;
+    z-index: 1;
+}
+
+.top-nav {
+    list-style-type: none;
+    height: 100%;
+    margin: 0;
+}
+
+.top-nav__elem {
+    padding: 20px 32px;
+    transition: .3s;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.top-nav__elem::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #109647;
+    transform: scaleX(0);
+    transition: all .2s ease-in-out;
+}
+
+.top-nav__elem:hover::before {
+    transform: scaleX(1);
+}
+
+.top-nav__elem_active {
+    background-color: #109647;
+}
+
+.top-nav__link,
+.top-nav__link:link,
+.top-nav__link:active,
+.top-nav__link:visited {
+    text-decoration: none;
+    color: #282828;
+    font-size: 12px;
+}
+
+.top-nav__elem_active .top-nav__link {
+    color: #fff;
+}
+
+
+.top-nav__elem:hover .top-nav__link {
+    color: #fff;
+    z-index: 2;
+    position: relative;    
+}
+
+@font-face {
+    font-family: "Futurica";
+    src: url(../libs/fonts/6872.ttf);
+    font-display: swap;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font: normal 14px "Futurica", sans-serif;
+    color: #282828;
+  }
+  
+  .header__top {
+    padding: 25px 0;
+  }
+  
+  .logo__img {
+    max-height: 50px;
+  }
+  
+  .phone__link, .phone__link:visited, .phone__link:hover, .phone__link:active, .phone__link:link {
+    color: #282828;
+    text-decoration: none;
+    line-height: 1.5;
+    font-size: 16px;
+  }
+  .phone__link_light, .phone__link_light:visited, .phone__link_light:hover, .phone__link_light:active, .phone__link_light:link {
+    color: #d6d7d8;
+  }
+  
+  .icon-accent {
+    color: #109647;
+    margin-right: 8px;
+    font-size: 16px;
+    padding-top: 5px;
+  }
+  
+  .communicate__link:not(:last-of-type) {
+    margin-right: 8px;
+  }
+  .communicate__icon {
+    height: 18px;
+    max-height: 18px;
+  }
+  
+  .social__link, .social__link:link, .social__link:active, .social__link:visited {
+    color: #282828;
+  }
+  
+  .nav__container {
+    background-color: #fff221;
+    border-radius: 2px;
+    box-shadow: 0px 2px 8px rgba(204, 204, 204, 0.5);
+    position: relative;
+    z-index: 1;
+  }
+  
+  .top-nav {
+    list-style-type: none;
+    height: 100%;
+    margin: 0;
+  }
+  .top-nav__link, .top-nav__link:link, .top-nav__link:active, .top-nav__link:visited {
+    text-decoration: none;
+    color: #282828;
+    font-size: 12px;
+  }
+  .top-nav__elem {
+    padding: 20px 32px;
+    transition: 0.3s;
+    text-transform: uppercase;
+    position: relative;
+  }
+  .top-nav__elem::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #109647;
+    transform: scaleX(0);
+    transition: all 0.2s ease-in-out;
+  }
+  .top-nav__elem:hover::before {
+    transform: scaleX(1);
+  }
+  .top-nav__elem:hover .top-nav__link {
+    color: #fff;
+    z-index: 2;
+    position: relative;
+  }
+  .top-nav__elem_active {
+    background-color: #109647;
+  }
+  .top-nav__elem_active .top-nav__link {
+    color: #fff;
+  }
+
+  .social__icon {
+    font-size: 22px;
+  }
+
+.welcome {
+    background-color: #f8f9fd;
+    transform: translateY(-20px);
+    position: relative;
+    z-index: 0;
+}
+
+.welcome__label {
+    font-size: 56px;
+    font-weight: 900;
+    line-height: .9;
+}
+
+.welcome .swiper-controls__prev,
+.welcome .swiper-controls__next {
+    font-size: 30px;
+    font-weight: 600;
+    color: #109647;
+    cursor: pointer;
+    background-color: #fff221;
+    border-radius: 2px;
+    padding: 0 12px;
+    transition: .3s;
+}
+
+.welcome .swiper-controls__prev:hover,
+.welcome .swiper-controls__next:hover {
+    opacity: .8;
+}
+
+.swiper-controls__prev {
+    margin-right: 8px;
+}
+
+.swiper-controls {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translateX(-100%);
+}
+
+.swiper-container {
+    width: 100%;
+    height: 600px;
+}
+
+.main-button {
+    border: 1px solid transparent;
+    background-color: #109647;
+    padding: 8px 12px;
+    color: #fff;
+    border-radius: 4px;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.main-button:hover {
+    border-color: #109647;
+    background: transparent;
+    color: #109647;
+}
+
+.welcome__swiper .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+    background-color: #109647; 
+    z-index: 10;
+}
+
+.welcome__swiper .swiper-slide {
+    position: relative;
+}
+
+.welcome__swiper .swiper-slide div {
+    max-width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+.caption {
+    color: #109647;
+    font-size: 16px;
+}
+
+.services {
+    padding: 45px 0;
+}
+
+.services__head {
+    margin-bottom: 45px;
+}
+
+.label {
+    font-size: 22px;
+}
+
+.label_light {
+    color: #fff;
+}
+
+.services__item {
+    padding: 15px 20px;
+}
+
+.service__icon {
+    width: 70px;
+    min-width: 70px;
+    height: 70px;
+    min-height: 70px;
+    background-color: #109647;
+    border-radius: 50%;
+    margin-right: 15px;
+    box-shadow: 0px 10px 30px -4px rgb(0 0 0 / 15%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.service__icon img {
+    width: 45px;
+    height: 45px;
+}
+
+.service__caption {
+    font-size: 16px;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.service__text {
+    color: #797979;
+    line-height: 1.6;
+}
+
+.about {
+    background-color: #f8f9fd;
+}
+
+.about__text {
+    padding: 45px 0;
+}
+
+.about__image {
+    background-image: url('../images/about.jpg');
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.tabulation .nav-pills .nav-item .nav-link {
+    background: #fff;
+    border-radius: 4px;
+    color: #282828;
+}
+
+.tabulation .nav-pills .nav-item .nav-link.active {
+    color: #fff;
+    background-color: #109647;  
+}
+
+.tabulation .tab-content {
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0px 9px 21px -16px rgb(0 0 0 / 15%);
+}
+
+.feedback-form {
+    background-image: url('../images/car-form.png');
+    padding: 45px 0;
+    background-color: #fff;
+    background-position: calc(100% - 205px) bottom;
+    background-size: contain;
+    position: relative;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.feedback-form::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, .8);
+}
+
+.feedback-form__head {
+    margin-bottom: 45px;
+}
+
+.feedback-form__head,
+.form-group {
+    position: relative;
+    z-index: 2;
+}
+
+.form-group__input {
+    padding: 8px 12px;
+    border: 1px solid #282828;
+    border-radius: 2px;
+}
+
+.form-group__input::placeholder {
+    color: #282828;
+    font-family: "Futurica", sans-serif;
+}
+
+.form-group__input {
+    margin-right: 25px;
+}
+
+.advantages {
+    background-color: #fff221;
+    padding: 45px;
+}
+
+.advantages__elem {
+    padding: 0 10px;
+    text-align: center;
+}
+
+.advantages__elem img {
+    max-width: 55px;
+    margin-bottom: 25px;
+}
+
+.work {
+    background-color: #f8f9fd;
+    padding: 45px;
+}
+
+.work__report {
+    width: 100%;
+}
+
+.report__elem {
+    width: calc(100% / 4);
+    min-width: calc(100% / 4);
+    height: 200px;
+    border: 2px solid #fff;
+    background-size: cover;
+    cursor: pointer;
+    position: relative;
+}
+
+.report__elem:hover::before {
+    content: "\2922";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-height: 70px;
+    height: 70px;
+    min-width: 70px;
+    width: 70px;
+    transform: translate(-50%, -50%);
+    background-color: #fff221;
+    border-radius: 50%;
+    color: #109647;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 70px;
+    z-index: 2;
+}
+
+.report__elem::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition: .3s;
+}
+
+.report__elem:hover::after {
+    background-color: rgba(16, 150, 71, .7);
+}
+
+.comments {
+    padding: 45px 0;
+}
+
+.comments__slider {
+    border: 1px solid #109647;
+    border-radius: 2px;
+}
+
+.comments__slide {
+    padding: 45px;
+}
+
+.comments__slider {
+    height: auto !important;
+}
+
+.comments__author {
+    color: #109647;
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+    font-size: 14px;
+    color: #109647;
+}
+
+.footer {
+    background-color: #109647;
+    padding: 45px 0;
+    color: #d6d7d8;
+}
+
+.footer__logo {
+    display: block;
+    margin-bottom: 25px;
+}
+
+.footer__logo img {
+    max-height: 50px;
+}
+
+.footer__caption {
+    font-weight: 900;
+    font-size: 16px;
+    color: #fff;
+}
+
+.footer__address {
+    margin-bottom: 25px;
+}
